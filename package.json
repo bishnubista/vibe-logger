@@ -1,0 +1,59 @@
+{
+  "name": "vibe-logger",
+  "version": "1.0.0",
+  "description": "Persistent memory for vibe coding sessions - automatic decision logging for AI coding tools in Google Docs",
+  "keywords": ["mcp", "ai-coding", "google-docs", "documentation", "decision-tracking", "vibe-coding", "cursor", "claude-code", "session-logging"],
+  "author": "Bishnu Bista",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "vibe-logger": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CLAUDE.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "auth:setup": "tsx src/scripts/auth-setup.ts",
+    "auth:test": "tsx src/scripts/auth-test.ts",
+    "auth:reset": "tsx src/scripts/auth-reset.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "googleapis": "^144.0.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bishnubista/vibe-logger.git"
+  },
+  "homepage": "https://github.com/bishnubista/vibe-logger#readme",
+  "bugs": {
+    "url": "https://github.com/bishnubista/vibe-logger/issues"
+  }
+}

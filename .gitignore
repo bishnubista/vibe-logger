@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Local tracking (not for GitHub)
+TODO.md
+NOTES.md
+CONVERSATION_LOG.md
+ARCHITECTURE.md
+
+# Claude Code context files
+.claude
+
+# Google OAuth credentials
+credentials.json
+token.json
+tokens/
+.credentials/
+
+# MCP configuration (may contain sensitive data)
+mcp-config.local.json
+config.local.json
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Test and utility scripts
+create-summary-doc.js
+document-session.js
+test-*.json
